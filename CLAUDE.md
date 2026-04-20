@@ -51,4 +51,11 @@ All data is in-memory — there is no backend or localStorage persistence. Data 
 
 Repository: https://github.com/achimfeldsmann1-byte/Pokekom
 
-After every meaningful change: commit with a clear message and push to `main`.
+**Commit and push to `main` after every meaningful unit of work** — a completed feature, a bug fix, a significant UI change. Do not batch multiple unrelated changes into one commit. This ensures work is never lost and the history is easy to revert.
+
+Commit message format:
+- Subject line: short imperative phrase describing what changed (e.g. `Add photo upload to inventory form`)
+- If the change needs context, add a blank line and a brief body paragraph
+- Always append: `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>`
+
+Push immediately after committing — a local-only commit is not a saved version.
